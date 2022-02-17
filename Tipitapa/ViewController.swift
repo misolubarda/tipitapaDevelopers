@@ -173,23 +173,7 @@ func optionals() {
 }
 
 func ifElseStatement() {
-    let pet = Pet(name: "Dante", breed: "", owner: "", age: 5, secondName: nil)
-
-
-//    if pet.age == 1 {
-//        print("This pet is 1 year old")
-//    } else if pet.age <= 5 {
-//        print("This pet is more than 1 and less or equal to 5 years old")
-//    } else if pet.age < 10 {
-//        print("This pet is more than X and less than X years old")
-//    } else {
-//        print("This pet is older than 10 ")
-//    }
-    
-    
-    
-// this is my change
-    
+    let pet = Pet(name: "Dante", breed: "", owner: "", age: 5, secondName: nil)    
     
     switch pet.age {
     case 1:
