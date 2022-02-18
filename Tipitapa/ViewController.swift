@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 //        pets()
 //        test01()
 //        optionals()
-        ifElseStatement()
+//        ifElseStatement()
+        structFunctions()
     }
 
     var button: UIButton = UIButton(type: .custom)
@@ -130,6 +131,18 @@ struct Pet {
     let owner: String
     let age: Int
     var secondName: String?
+
+    func description() -> String {
+        return "\(name) is owned by \(owner) and is \(age) years old."
+    }
+
+    func isFriendWith(pet: Pet) -> String {
+        if self.name == "roco" && pet.name == "dante" || self.name  == "dante" && pet.name == "roco" {
+            return "YES!!!!"
+        }
+
+        return "NOOOOO!"
+    }
 }
 
 
@@ -183,4 +196,11 @@ func ifElseStatement() {
     default:
         print("This pet is more than 5 years old")
     }
+}
+
+func structFunctions() {
+    let roco = Pet(name: "roco", breed: "mongrel", owner: "Junior", age: 7, secondName: nil)
+    let dante: Pet = Pet(name: "dante", breed: "Beagle", owner: "Edwin", age: 4, secondName: nil)
+    let sasha = Pet(name: "sasha", breed: "Husky", owner: "marvin" , age: 1, secondName: "Misho")
+
 }
