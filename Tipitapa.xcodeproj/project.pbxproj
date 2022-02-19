@@ -16,6 +16,8 @@
 		EB32075027BF071700136B24 /* TipitapaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32074F27BF071700136B24 /* TipitapaTests.swift */; };
 		EB32075A27BF071700136B24 /* TipitapaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32075927BF071700136B24 /* TipitapaUITests.swift */; };
 		EB32075C27BF071700136B24 /* TipitapaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32075B27BF071700136B24 /* TipitapaUITestsLaunchTests.swift */; };
+		EBB9F42F27C07799005E8B4A /* Lessons01.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9F42E27C07799005E8B4A /* Lessons01.swift */; };
+		EBB9F43127C077EF005E8B4A /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9F43027C077EF005E8B4A /* CountriesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EB32075527BF071700136B24 /* TipitapaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipitapaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB32075927BF071700136B24 /* TipitapaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipitapaUITests.swift; sourceTree = "<group>"; };
 		EB32075B27BF071700136B24 /* TipitapaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipitapaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBB9F42E27C07799005E8B4A /* Lessons01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons01.swift; sourceTree = "<group>"; };
+		EBB9F43027C077EF005E8B4A /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				EB32073827BF071700136B24 /* AppDelegate.swift */,
 				EB32073A27BF071700136B24 /* SceneDelegate.swift */,
 				EB32073C27BF071700136B24 /* ViewController.swift */,
+				EBB9F42E27C07799005E8B4A /* Lessons01.swift */,
+				EBB9F43027C077EF005E8B4A /* CountriesService.swift */,
 				EB32073E27BF071700136B24 /* Main.storyboard */,
 				EB32074127BF071700136B24 /* Assets.xcassets */,
 				EB32074327BF071700136B24 /* LaunchScreen.storyboard */,
@@ -260,6 +266,8 @@
 			files = (
 				EB32073D27BF071700136B24 /* ViewController.swift in Sources */,
 				EB32073927BF071700136B24 /* AppDelegate.swift in Sources */,
+				EBB9F42F27C07799005E8B4A /* Lessons01.swift in Sources */,
+				EBB9F43127C077EF005E8B4A /* CountriesService.swift in Sources */,
 				EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
