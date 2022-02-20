@@ -21,16 +21,29 @@ class CountriesService {
         countryNames.sort()
 
         return countryNames
-    }
 
+    }
     // homework
-    func allCountriesInOneString() -> String {
+   
+    func allCountriesInOneString() -> [String] {
         // 1. "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, Argentina are beautiful countries."
         // 2. "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador and Argentina are beautiful countries."
+        let beautifulCountries: [Country] = [.nicaragua,.costaRica,.mexico,.bolivia,.elSalvador]
 
-        return ""
+
+        var beautifulCountriesNames : [String] = []
+        for country in beautifulCountries {
+            let beautifulCountriesName =  country.rawValue
+            beautifulCountriesNames.append(beautifulCountriesName)
+        }
+        let beautifulCountriesNamess = beautifulCountriesNames[0] + " " + "are beautiful countries"
+        return beautifulCountriesNames
+
+
     }
 }
+
+
 
 enum Country: String {
     case nicaragua = "Nicaragua❤️"

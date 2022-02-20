@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         // let roco = Pet(...)
         // roco.isFren()
         let countryService = CountriesService()
-        let countries = countryService.namesSortedAlphabetically()
-        
+        _ = countryService.namesSortedAlphabetically()
+        let CountryService =  CountriesService()
+        let beautifulCountries = CountryService.allCountriesInOneString()
     }
 }
 
