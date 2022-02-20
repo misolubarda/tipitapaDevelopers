@@ -26,9 +26,11 @@ class CountriesService {
     // homework
    
     func allCountriesInOneString() -> String {
-        // 1. "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, Argentina are beautiful countries."
-        // 2. "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador and Argentina are beautiful countries."
-        let beautifulCountries: [Country] = [.nicaragua,.costaRica,.mexico,.bolivia,.elSalvador]
+        // HOMEWORK:
+        // We did this "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, and Argentina are beautiful countries."
+        //
+        // Now we need to have a code that supports any set of counties like here:
+        let beautifulCountries: [Country] = [.nicaragua, .costaRica, .bolivia, .elSalvador] // do not change this line
 
 
         var beautifulCountriesNames : [String] = []
@@ -39,15 +41,25 @@ class CountriesService {
 
         var finalText: String = ""
         for countryName in beautifulCountriesNames {
-            finalText = finalText + countryName + ", " // "Nicaragua❤️, " -> "Nicaragua❤️, Costa Rica, "
+            if countryName != "Argentina" {
+                finalText = finalText + countryName + ", "
+
+            }
         }
-        // finalText -> "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, Argentina, "
-        //                      we need to remove the last 2 characters: comma and space ↑↑
+
+        // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, "// STOP?
+        // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador" //remove comma and space
+        // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador and Argentina" // add "and Agrentina"
+        // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, and Argentina are beautiful countries." // add " are beautiful countries."
+
 
         finalText.removeLast()
         finalText.removeLast()
 
         // finalText -> "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, Argentina"
+
+
+        finalText = finalText + " and Argentina are beatiful countries."
 
         return finalText
     }
