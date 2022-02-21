@@ -30,7 +30,7 @@ class CountriesService {
         // We did this "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, and Argentina are beautiful countries."
         //
         // Now we need to have a code that supports any set of counties like here:
-        let beautifulCountries: [Country] = [.nicaragua, .costaRica, .bolivia, .elSalvador] // do not change this line
+        let beautifulCountries: [Country] = [.costaRica, .elSalvador, .nicaragua, .bolivia] // do not change this line
 
 
         var beautifulCountriesNames : [String] = []
@@ -41,9 +41,8 @@ class CountriesService {
 
         var finalText: String = ""
         for countryName in beautifulCountriesNames {
-            if countryName != "Argentina" {
+            if countryName != beautifulCountriesNames.last {
                 finalText = finalText + countryName + ", "
-
             }
         }
 
@@ -59,7 +58,7 @@ class CountriesService {
         // finalText -> "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, Argentina"
 
 
-        finalText = finalText + " and Argentina are beatiful countries."
+        finalText = finalText + " and \(beautifulCountriesNames.last!) are beatiful countries."
 
         return finalText
     }
