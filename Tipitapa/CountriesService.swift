@@ -59,6 +59,7 @@ class CountriesService {
 
 
         finalText = finalText + " and \(beautifulCountriesNames.last!) are beatiful countries."
+        let finaltext2  = "\(beautifulCountriesNames[2]) is the most beautiful country"
 
         return finalText
     }
