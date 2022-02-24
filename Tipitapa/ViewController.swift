@@ -17,7 +17,28 @@ class ViewController: UIViewController {
         let countryService = CountriesService()
         _ = countryService.namesSortedAlphabetically()
         let CountryService =  CountriesService()
-        let beautifulCountries = CountryService.allCountriesInOneString()
+
+        let myCountries: [Country] = [.nicaragua,
+                                      .costaRica,
+                                      .elSalvador,
+                                      .argentina]
+
+        let someCountries: [Country] = [.elSalvador,
+                                        .argentina]
+
+
+        let beautifulCountries = CountryService.allCountriesInOneString(countries: myCountries)
+
+
+
+
+        
+        // HOMEWORK:
+//        let countriesSortedByName = CountryService.countriesSortedByName(countries: myCountries) // returns: [String]
+
+        // please use this inside of the function:
+        //        let sortedCountries = beautifulCountriesNames.sorted()
+
     }
 }
 
