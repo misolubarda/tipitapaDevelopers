@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CountriesService {
     func namesSortedAlphabetically() -> [String] {
@@ -82,6 +83,34 @@ class CountriesService {
 
         return finalText
     }
+
+    func countriesSortedByName(countries: [Country]) -> [Country] {
+
+        // [Country] -> [String]
+        var beautifulCountriesNames : [String] = []
+        for country in countries {
+            let name = country.rawValue
+            beautifulCountriesNames.append(name)
+        }
+
+
+        let sortedCountryNames = beautifulCountriesNames.sorted() // [String] (names) -???> [Country]
+
+//        Country -> String
+//        let name = country.rawValue
+
+//        String -> Country
+//        let country = Country(rawValue: "Bolivia") //Country.mexico
+
+        // [String] -> [Country]
+        var sortedCountries : [Country] = []
+        for name in sortedCountryNames {
+            let country = Country(rawValue: name)!
+            sortedCountries.append(country)
+        }
+
+        return sortedCountries
+    }
 }
 
 
@@ -93,5 +122,40 @@ enum Country: String {
     case bolivia = "Bolivia"
     case elSalvador = "El Salvador"
     case argentina = "Argentina"
-}
 
+    /// Number of citizens in millions.
+    /// - Returns: Number of millions.
+    func population() -> Int {
+        switch self {
+        case .nicaragua:
+            return 7
+        case .costaRica:
+            return 5
+        case .mexico:
+            return 130
+        case .bolivia:
+            return 12
+        case .elSalvador:
+            return 6
+        case .argentina:
+            return 45
+        }
+    }
+
+    func hasCoast() -> Bool {
+        switch self {
+        case .nicaragua:
+            return true
+        case .costaRica:
+            return true
+        case .mexico:
+            return true
+        case .bolivia:
+            return false
+        case .elSalvador:
+            return true
+        case .argentina:
+            return true
+        }
+    }
+}

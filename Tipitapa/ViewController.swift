@@ -19,8 +19,9 @@ class ViewController: UIViewController {
         let CountryService =  CountriesService()
 
         let myCountries: [Country] = [.nicaragua,
-                                      .costaRica,
                                       .elSalvador,
+                                      .costaRica,
+                                      .bolivia,
                                       .argentina]
 
         let someCountries: [Country] = [.elSalvador,
@@ -34,11 +35,24 @@ class ViewController: UIViewController {
 
         
         // HOMEWORK:
-//        let countriesSortedByName = CountryService.countriesSortedByName(countries: myCountries) // returns: [String]
+        let countriesSortedByName = CountryService.countriesSortedByName(countries: myCountries) // returns: [Country]
 
-        // please use this inside of the function:
-        //        let sortedCountries = beautifulCountriesNames.sorted()
 
+
+
+        // go through ALL sorted countries in countriesSortedByName and print
+        for country in countriesSortedByName {
+
+            var coastString = "doesn't have"
+            if country.hasCoast() {
+                coastString = "has"
+            }
+
+
+            print("\(country.rawValue) has a population of \(country.population()) millions citizens. This country \(coastString) coast.")
+        }
+
+        // HOMEWORK: do the same think for Dog as you did for Country
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB05A79027C8533300B1A0F1 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05A78F27C8533300B1A0F1 /* DogService.swift */; };
 		EB32073927BF071700136B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073827BF071700136B24 /* AppDelegate.swift */; };
 		EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073A27BF071700136B24 /* SceneDelegate.swift */; };
 		EB32073D27BF071700136B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073C27BF071700136B24 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB05A78F27C8533300B1A0F1 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
 		EB32073527BF071700136B24 /* Tipitapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipitapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB32073827BF071700136B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB32073A27BF071700136B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				EB32073C27BF071700136B24 /* ViewController.swift */,
 				EBB9F42E27C07799005E8B4A /* Lessons01.swift */,
 				EBB9F43027C077EF005E8B4A /* CountriesService.swift */,
+				EB05A78F27C8533300B1A0F1 /* DogService.swift */,
 				EB32073E27BF071700136B24 /* Main.storyboard */,
 				EB32074127BF071700136B24 /* Assets.xcassets */,
 				EB32074327BF071700136B24 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 			files = (
 				EB32073D27BF071700136B24 /* ViewController.swift in Sources */,
 				EB32073927BF071700136B24 /* AppDelegate.swift in Sources */,
+				EB05A79027C8533300B1A0F1 /* DogService.swift in Sources */,
 				EBB9F42F27C07799005E8B4A /* Lessons01.swift in Sources */,
 				EBB9F43127C077EF005E8B4A /* CountriesService.swift in Sources */,
 				EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */,
