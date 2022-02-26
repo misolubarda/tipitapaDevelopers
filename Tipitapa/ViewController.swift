@@ -53,6 +53,14 @@ class ViewController: UIViewController {
         }
 
         // HOMEWORK: do the same think for Dog as you did for Country
+        let dogservice = dogservice()
+        _ = dogservice.allDogs()
+        let myDogs: [Dogs] = [.roco, .sasha, .bruno, .dante, .lucas]
+
+        for dogs in myDogs {
+
+            var older1YearString = "is younger than 1 year"
+        }
     }
 }
 
