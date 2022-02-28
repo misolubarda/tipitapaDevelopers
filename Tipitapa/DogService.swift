@@ -7,15 +7,28 @@
 
 import Foundation
 
-class dogservice {
-    func allDogs() -> [Dogs] {
-        let allDogs: [Dogs] = [.bruno, .roco, .dante, .sasha, .lucas]
-        return allDogs
-    }
+class DogService {
+    func dogsNamesSortedAlphabeticly() -> [String] {
+        let allDogs: [Dog] = [.bruno, .lucas, .dante, .roco, .sasha]
 
+        var dogNames: [String] = [ ]
+
+        for dog in allDogs {
+            let dogName = dog.rawValue
+            dogNames.append(dogName)
+        }
+        dogNames.sort()
+        return dogNames
+    }
+    func allDogsInOneString(dogs: [Dog]) -> [String] {
+
+        var finalDogs: String = ""
+
+        return []
+    }
     
 }
-enum Dogs: String {
+enum Dog: String, CaseIterable {
 case bruno = "Bruno"
 case roco = "Roco"
 case dante = "Dante"
