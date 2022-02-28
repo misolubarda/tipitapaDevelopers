@@ -70,7 +70,7 @@ class CountriesService {
         // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, "// STOP?
         // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador" //remove comma and space
         // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador and Argentina" // add "and Agrentina"
-        // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador, and Argentina are beautiful countries." // add " are beautiful countries."
+        // "Nicaragua❤️, Costa Rica, Mexico, Bolivia, El Salvador and Argentina are beautiful countries." // add " are beautiful countries."
 
         finalText.removeLast()
         finalText.removeLast()

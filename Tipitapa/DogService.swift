@@ -9,7 +9,7 @@ import Foundation
 
 class DogService {
     func dogsNamesSortedAlphabeticly() -> [String] {
-        let allDogs: [Dog] = [.bruno, .lucas, .dante, .roco, .sasha]
+        let allDogs = Dog.allCases
 
         var dogNames: [String] = [ ]
 
@@ -20,9 +20,12 @@ class DogService {
         dogNames.sort()
         return dogNames
     }
+
+    // "..."
     func allDogsInOneString(dogs: [Dog]) -> [String] {
 
         var finalDogs: String = ""
+        if beautifulDog 
 
         return []
     }

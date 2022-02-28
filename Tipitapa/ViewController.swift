@@ -66,6 +66,18 @@ class ViewController: UIViewController {
 
             var older1YearString = "is younger than 1 year"
         }
+
+
+
+
+        // HOMEWORK: price list shold print out array of strings like this:
+        // LLDB: po carSellingService.priceList
+        // ----------------------------
+        // 1. Mercedes, produced in 1992 costs 1500.00 USD
+        // 2. Toyota, produced in 2014 costs 12000.00 USD
+        // 3. Volkswagen, produced in 2000 costs 3000.00 USD
+        // 4. Audi, produced in 2021 costs 45000.00 USD
+
     }
 }
 
