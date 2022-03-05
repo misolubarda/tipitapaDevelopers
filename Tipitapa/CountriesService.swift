@@ -108,7 +108,17 @@ class CountriesService {
             let country = Country(rawValue: name)!
             sortedCountries.append(country)
         }
+        
+        for country in countries {
 
+            var coastString = "doesn't have"
+            if country.hasCoast() {
+                coastString = "has"
+            }
+
+
+            print("\(country.rawValue) has a population of \(country.population()) millions citizens. This country \(coastString) coast.")
+        }
         return sortedCountries
     }
     

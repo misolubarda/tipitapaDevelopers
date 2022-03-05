@@ -39,19 +39,6 @@ class ViewController: UIViewController {
 
 
 
-
-        // go through ALL sorted countries in countriesSortedByName and print
-        for country in countriesSortedByName {
-
-            var coastString = "doesn't have"
-            if country.hasCoast() {
-                coastString = "has"
-            }
-
-
-            print("\(country.rawValue) has a population of \(country.population()) millions citizens. This country \(coastString) coast.")
-        }
-
         // HOMEWORK: do the same think for Dog as you did for Country
         DogService()
         let dogservice = DogService()
@@ -60,12 +47,9 @@ class ViewController: UIViewController {
         let allDogsInOneString = dogservice.allDogsInOneString(dogs: myDogs)
 
 
+        let dogSortedByName = dogservice.dogsSortedByName(dogs: myDogs)
 
 
-        for Dog in myDogs {
-
-            var older1YearString = "is younger than 1 year"
-        }
 
 
 
