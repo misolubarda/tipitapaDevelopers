@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         let dogSortedByName = dogservice.dogsSortedByName(dogs: myDogs)
 
 
-
+        test()
 
 
 

@@ -21,7 +21,6 @@ class DogService {
         return dogNames
     }
 
-    // "..."
     func allDogsInOneString(dogs: [Dog]) -> [String] {
         var finalText: String = ""
 
