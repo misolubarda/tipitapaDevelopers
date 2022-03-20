@@ -40,10 +40,3 @@ class Animal {
         self.numberOfLegs = numberOfLegs
     }
 }
-
-func test() {
-    let sasha1 = Animal(breed: .dog, age: 1, numberOfLegs: 4)
-    let sasha2 = Animal(breed: .dog, age: 1, numberOfLegs: 4)
-
-    let boeing737 = Airplain(type: .civil, size: .mid)
-}

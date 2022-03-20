@@ -49,11 +49,6 @@ class ViewController: UIViewController {
 
         let dogSortedByName = dogservice.dogsSortedByName(dogs: myDogs)
 
-
-        test()
-
-
-
         // HOMEWORK: price list shold print out array of strings like this:
         // LLDB: po carSellingService.priceList
         // ----------------------------
