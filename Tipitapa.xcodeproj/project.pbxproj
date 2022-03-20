@@ -111,12 +111,7 @@
 			children = (
 				EB32073827BF071700136B24 /* AppDelegate.swift */,
 				EB32073A27BF071700136B24 /* SceneDelegate.swift */,
-				EB32073C27BF071700136B24 /* ViewController.swift */,
-				EBB9F42E27C07799005E8B4A /* Lessons01.swift */,
-				EBB9F43027C077EF005E8B4A /* CountriesService.swift */,
-				EB05A78F27C8533300B1A0F1 /* DogService.swift */,
-				EBA7F0ED27CD94B60061F496 /* CarSellingService.swift */,
-				EB7F98D627D3187B0076F3CE /* StructsAndClasses.swift */,
+				EBAE671727E2BC78008B7381 /* Old excercises */,
 				EB32073E27BF071700136B24 /* Main.storyboard */,
 				EB32074127BF071700136B24 /* Assets.xcassets */,
 				EB32074327BF071700136B24 /* LaunchScreen.storyboard */,
@@ -140,6 +135,19 @@
 				EB32075B27BF071700136B24 /* TipitapaUITestsLaunchTests.swift */,
 			);
 			path = TipitapaUITests;
+			sourceTree = "<group>";
+		};
+		EBAE671727E2BC78008B7381 /* Old excercises */ = {
+			isa = PBXGroup;
+			children = (
+				EB32073C27BF071700136B24 /* ViewController.swift */,
+				EBB9F42E27C07799005E8B4A /* Lessons01.swift */,
+				EBB9F43027C077EF005E8B4A /* CountriesService.swift */,
+				EB05A78F27C8533300B1A0F1 /* DogService.swift */,
+				EBA7F0ED27CD94B60061F496 /* CarSellingService.swift */,
+				EB7F98D627D3187B0076F3CE /* StructsAndClasses.swift */,
+			);
+			path = "Old excercises";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
