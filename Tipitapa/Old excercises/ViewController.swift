@@ -40,7 +40,6 @@ class ViewController: UIViewController {
 
 
         // HOMEWORK: do the same think for Dog as you did for Country
-        DogService()
         let dogservice = DogService()
         let alpha = dogservice.dogsNamesSortedAlphabeticly()
         let myDogs: [Dog] = [.roco, .sasha, .bruno, .dante, .lucas]
@@ -48,6 +47,12 @@ class ViewController: UIViewController {
 
 
         let dogSortedByName = dogservice.dogsSortedByName(dogs: myDogs)
+
+        let firstCar = Car(mark: .audi, price: 1242.32, producedInYear: 1990)
+        let secondCar = Car(mark: .mercedes, price: 1242.32, producedInYear: 1990)
+        let thirdCar = Car(mark: .audi, price: 1242.32, producedInYear: 1990)
+
+        let carService = CarSellingService(cars: [firstCar, secondCar, thirdCar])
 
         // HOMEWORK: price list shold print out array of strings like this:
         // LLDB: po carSellingService.priceList

@@ -15,7 +15,6 @@ class CarSellingService {
     }
 
     var priceList: [String] {
-
         return []
     }
 }
