@@ -15,20 +15,33 @@ class CarSellingService {
     }
 
     var priceList: [String] {
+        cars.enumerated().forEach { twoValues in
+            let car = twoValues.element
+            let number = twoValues.offset + 1
+
+            print("\(number). \(car.brand.rawValue)")
+        }
+
+//        ==
+//
+//        for car in cars {
+//
+//        }
+
         return []
     }
 }
 
 
 struct Car {
-    let mark: Brand
+    let brand: Brand
     let price: Float
     let producedInYear: Int
 }
 
-enum Brand {
-    case mercedes
-    case audi
-    case toyota
-    case vw
+enum Brand: String {
+    case mercedes = "Mercedes"
+    case audi = "Audi"
+    case toyota = "Toyota"
+    case vw = "Volkswagen"
 }

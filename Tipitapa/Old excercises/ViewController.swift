@@ -48,11 +48,12 @@ class ViewController: UIViewController {
 
         let dogSortedByName = dogservice.dogsSortedByName(dogs: myDogs)
 
-        let firstCar = Car(mark: .audi, price: 1242.32, producedInYear: 1990)
-        let secondCar = Car(mark: .mercedes, price: 1242.32, producedInYear: 1990)
-        let thirdCar = Car(mark: .audi, price: 1242.32, producedInYear: 1990)
+        let firstCar = Car(brand: .audi, price: 1242.32, producedInYear: 1990)
+        let secondCar = Car(brand: .mercedes, price: 1242.32, producedInYear: 1990)
+        let thirdCar = Car(brand: .toyota, price: 1242.32, producedInYear: 1990)
 
         let carService = CarSellingService(cars: [firstCar, secondCar, thirdCar])
+        carService.priceList
 
         // HOMEWORK: price list shold print out array of strings like this:
         // LLDB: po carSellingService.priceList
