@@ -15,20 +15,16 @@ class CarSellingService {
     }
 
     var priceList: [String] {
-        cars.enumerated().forEach { twoValues in
+        let priceList: [String] = cars.enumerated().map { twoValues in
             let car = twoValues.element
             let number = twoValues.offset + 1
 
-            print("\(number). \(car.brand.rawValue), produced in \(car.producedInYear) costs \(car.price) USD")
+            let string = "\(number). \(car.brand.rawValue), produced in \(car.producedInYear) costs \(car.price) USD"
+
+            return string
         }
 
-//        ==
-//
-//        for car in cars {
-//
-//        }
-
-        return []
+        return priceList
     }
 }
 

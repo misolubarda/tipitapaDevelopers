@@ -51,10 +51,30 @@ class ViewController: UIViewController {
         let firstCar = Car(brand: .audi, price: 45000.00, producedInYear: 2021)
         let secondCar = Car(brand: .mercedes, price: 1500.00, producedInYear: 1992)
         let thirdCar = Car(brand: .toyota, price: 12000.00, producedInYear: 2014)
+        let car1 = Car(brand: .vw, price: 120.00, producedInYear: 2010)
+        let car2 = Car(brand: .vw, price: 12343.00, producedInYear: 2000)
+        let car3 = Car(brand: .mercedes, price: 64323.00, producedInYear: 2004)
+        let car4 = Car(brand: .toyota, price: 8556.00, producedInYear: 1990)
 
-        let carService = CarSellingService(cars: [firstCar, secondCar, thirdCar])
-        carService.priceList
+        let cars = [firstCar, secondCar, thirdCar, car1, car2, car3, car4]
 
+        let carService = CarSellingService(cars: cars)
+        carService.priceList.forEach { element in
+            print(element)
+        }
+
+        print("------------")
+
+        let carsOlderThan2000 = cars.filter { car in
+            if car.producedInYear > 2000 {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        let newService = CarSellingService(cars: carsOlderThan2000)
+        print(newService.priceList)
         // HOMEWORK: price list shold print out array of strings like this:
         // LLDB: po carSellingService.priceList
         // ----------------------------
@@ -63,6 +83,30 @@ class ViewController: UIViewController {
         // 3. Volkswagen, produced in 2000 costs 3000.00 USD
         // 4. Audi, produced in 2021 costs 45000.00 USD
 
+
+        let numbers = [123, 34, 43643, 34, 342352, 445]
+
+        let numbersGreaterThan100 = numbers.filter {
+            number in
+            if number > 100 {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+        print(numbersGreaterThan100)
+
+
+        let numbersWith5Digits = numbers.filter { number in
+
+//                            AND (not OR)
+            if number > 10000 && number < 99999 {
+                return true
+            }
+            return false
+        }
+        print(numbersWith5Digits)
     }
 }
 
