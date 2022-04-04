@@ -48,9 +48,9 @@ class ViewController: UIViewController {
 
         let dogSortedByName = dogservice.dogsSortedByName(dogs: myDogs)
 
-        let firstCar = Car(brand: .audi, price: 1242.32, producedInYear: 1990)
-        let secondCar = Car(brand: .mercedes, price: 1242.32, producedInYear: 1990)
-        let thirdCar = Car(brand: .toyota, price: 1242.32, producedInYear: 1990)
+        let firstCar = Car(brand: .audi, price: 45000.00, producedInYear: 2021)
+        let secondCar = Car(brand: .mercedes, price: 1500.00, producedInYear: 1992)
+        let thirdCar = Car(brand: .toyota, price: 12000.00, producedInYear: 2014)
 
         let carService = CarSellingService(cars: [firstCar, secondCar, thirdCar])
         carService.priceList

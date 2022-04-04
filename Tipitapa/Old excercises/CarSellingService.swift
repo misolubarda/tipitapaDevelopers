@@ -19,7 +19,7 @@ class CarSellingService {
             let car = twoValues.element
             let number = twoValues.offset + 1
 
-            print("\(number). \(car.brand.rawValue)")
+            print("\(number). \(car.brand.rawValue), produced in \(car.producedInYear) costs \(car.price) USD")
         }
 
 //        ==
