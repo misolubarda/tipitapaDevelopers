@@ -40,6 +40,7 @@ class DogService {
         finalText = finalText + " and \(finalDogs.last!) are cute dogs"
         return []
     }
+
     func dogsSortedByName(dogs: [Dog]) -> [String] {
         var sortedDogs: [String] = []
         

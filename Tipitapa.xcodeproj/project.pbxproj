@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB05A79027C8533300B1A0F1 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05A78F27C8533300B1A0F1 /* DogService.swift */; };
+		EB2A7FA927FCD0CC00175295 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A7FA827FCD0CC00175295 /* File.swift */; };
 		EB32073927BF071700136B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073827BF071700136B24 /* AppDelegate.swift */; };
 		EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073A27BF071700136B24 /* SceneDelegate.swift */; };
 		EB32073D27BF071700136B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073C27BF071700136B24 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		EB05A78F27C8533300B1A0F1 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
+		EB2A7FA827FCD0CC00175295 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		EB32073527BF071700136B24 /* Tipitapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipitapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB32073827BF071700136B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB32073A27BF071700136B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2A7FA727FCD0B900175295 /* REST Countries */ = {
+			isa = PBXGroup;
+			children = (
+				EB2A7FA827FCD0CC00175295 /* File.swift */,
+			);
+			path = "REST Countries";
+			sourceTree = "<group>";
+		};
 		EB32072C27BF071700136B24 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		EB32073727BF071700136B24 /* Tipitapa */ = {
 			isa = PBXGroup;
 			children = (
+				EB2A7FA727FCD0B900175295 /* REST Countries */,
 				EB32073827BF071700136B24 /* AppDelegate.swift */,
 				EB32073A27BF071700136B24 /* SceneDelegate.swift */,
 				EBAE671727E2BC78008B7381 /* Old excercises */,
@@ -288,6 +299,7 @@
 				EBB9F42F27C07799005E8B4A /* Lessons01.swift in Sources */,
 				EBA7F0EE27CD94B60061F496 /* CarSellingService.swift in Sources */,
 				EBB9F43127C077EF005E8B4A /* CountriesService.swift in Sources */,
+				EB2A7FA927FCD0CC00175295 /* File.swift in Sources */,
 				EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

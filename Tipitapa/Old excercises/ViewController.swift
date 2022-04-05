@@ -12,6 +12,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        let service = RestCountriesService()
+//        let text = service.get()
+//        print(text)
+
+        homework()
+    }
+
+    func homework() {
+        // 1. Add country Nigeria to enum Country
+        // 2. Print out countries that start with letter N and are sorted by population
+
+        // NO class before the homework is finished
+    }
+
+    func oldStuff() {
         // let roco = Pet(...)
         // roco.isFren()
         let countryService = CountriesService()
@@ -33,7 +48,7 @@ class ViewController: UIViewController {
 
 
 
-        
+
         // HOMEWORK:
         let countriesSortedByName = CountryService.countriesSortedByName(countries: myCountries) // returns: [Country]
 
@@ -84,29 +99,26 @@ class ViewController: UIViewController {
         // 4. Audi, produced in 2021 costs 45000.00 USD
 
 
-        let numbers = [123, 34, 43643, 34, 342352, 445]
+        let numbers = [123, 34, 43643, 34, 342352, 445, 10000, 99999]
 
         let numbersGreaterThan100 = numbers.filter {
             number in
             if number > 100 {
                 return true
-            }
-            else {
+            } else {
                 return false
             }
         }
         print(numbersGreaterThan100)
 
-
         let numbersWith5Digits = numbers.filter { number in
-
-//                            AND (not OR)
-            if number > 10000 && number < 99999 {
+            if number > 9999 && number < 100000 {
                 return true
             }
             return false
         }
         print(numbersWith5Digits)
+
     }
 }
 
