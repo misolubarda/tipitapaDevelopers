@@ -18,10 +18,20 @@ class ViewController: UIViewController {
 
         homework()
     }
-
+    
     func homework() {
         // 1. Add country Nigeria to enum Country
         // 2. Print out countries that start with letter N and are sorted by population
+    
+        // NO class before the homework is finished
+
+        let countryService = CountryService2(countries: Country.allCases)
+        let results = countryService.countriesStartingWithNSorted()
+        print(results)
+
+
+        // 1. Define City and have many cities
+        // 2. Print out cities that start with letter N and are sorted by population
 
         // NO class before the homework is finished
     }

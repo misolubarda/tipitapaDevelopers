@@ -121,18 +121,50 @@ class CountriesService {
         }
         return sortedCountries
     }
-    
+
+    func test() {
+        let service = CountryService2(countries: Country.allCases)
+    }
+}
+
+class CountryService2 {
+    private let countries: [Country]
+
+    init(countries: [Country]) {
+        self.countries = countries
+    }
+
+    func countriesStartingWithNSorted() -> String {
+        let filteredCountries = countries.filter { country in
+            let name = country.rawValue
+            if name.first == "N" {
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        let sorted = filteredCountries.sorted { firstCountry, secondCountry in
+            if firstCountry.population() > secondCountry.population() {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+        return "\(sorted)"
+    }
 }
 
 
-
-enum Country: String {
+enum Country: String, CaseIterable {
     case nicaragua = "Nicaragua❤️"
     case costaRica = "Costa Rica"
     case mexico = "Mexico"
     case bolivia = "Bolivia"
     case elSalvador = "El Salvador"
     case argentina = "Argentina"
+    case nigeria = "Nigeria"
 
     /// Number of citizens in millions.
     /// - Returns: Number of millions.
@@ -150,6 +182,8 @@ enum Country: String {
             return 6
         case .argentina:
             return 45
+        case .nigeria:
+            return 206
         }
     }
 
@@ -166,6 +200,8 @@ enum Country: String {
         case .elSalvador:
             return true
         case .argentina:
+            return true
+        case .nigeria:
             return true
         }
     }
