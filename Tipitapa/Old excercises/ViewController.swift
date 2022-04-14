@@ -34,6 +34,8 @@ class ViewController: UIViewController {
         // 2. Print out cities that start with letter N and are sorted by population
 
         // NO class before the homework is finished
+        let cityService = CitiesService(cities: City.allCases)
+        print(cityService.citiesStartingWithNAPopulatinMoreThan5())
     }
 
     func oldStuff() {

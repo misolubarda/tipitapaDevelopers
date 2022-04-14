@@ -126,7 +126,7 @@ class CountriesService {
         let service = CountryService2(countries: Country.allCases)
     }
     func test3() {
-        let cityService = citiesService(cities: City.allCases)
+        let cityService = CitiesService(cities: City.allCases)
     }
 }
 
@@ -158,15 +158,31 @@ class CountryService2 {
         return "\(sorted)"
     }
 
+
 }
 
-class citiesService {
+class CitiesService {
     private let cities: [City]
 
     init(cities: [City]) {
         self.cities = cities
     }
-    
+
+    // "Na....", population: more than 5
+    func citiesStartingWithNAPopulatinMoreThan5() -> String {
+        let citiesStartingWithN = cities.filter { city in
+            let nameArray = Array(city.rawValue)
+            return nameArray[0] == "N" && nameArray[1] == "a"
+        }
+
+        let sorted = citiesStartingWithN.filter { city in
+            return city.population() > 5
+        }
+
+        return "\(sorted)"
+    }
+
+
 }
 
 
@@ -180,7 +196,7 @@ enum Country: String, CaseIterable {
     case nigeria = "Nigeria"
 
     /// Number of citizens in millions.
-    /// - Returns: Number of millions.
+    // - Returns: Number of millions.
     func population() -> Int {
         switch self {
         case .nicaragua:
@@ -220,6 +236,7 @@ enum Country: String, CaseIterable {
     }
 }
 enum City: String, CaseIterable {
+    //     city    .rawValue
     case nairobi = "Nairobi"
     case napoles = "Napoles"
     case navarra = "Navarra"
