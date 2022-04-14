@@ -1,28 +1,21 @@
 //
-//  ViewController.swift
-//  Test
+//  StartingFile.swift
+//  Tipitapa
 //
-//  Created by Miso Lubarda on 21.01.22.
+//  Created by Miso Lubarda on 14.04.22.
 //
 
-import UIKit // Apple SDK/library
+import Foundation
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-//        let service = RestCountriesService()
-//        let text = service.get()
-//        print(text)
-
+class StartOfExcersises {
+    func start() {
         homework()
     }
-    
-    func homework() {
+
+    private func homework() {
         // 1. Add country Nigeria to enum Country
         // 2. Print out countries that start with letter N and are sorted by population
-    
+
         // NO class before the homework is finished
 
         let countryService = CountryService2(countries: Country.allCases)
@@ -38,7 +31,7 @@ class ViewController: UIViewController {
         print(cityService.citiesStartingWithNAPopulatinMoreThan5())
     }
 
-    func oldStuff() {
+    private func oldStuff() {
         // let roco = Pet(...)
         // roco.isFren()
         let countryService = CountriesService()
@@ -132,5 +125,5 @@ class ViewController: UIViewController {
         print(numbersWith5Digits)
 
     }
-}
 
+}

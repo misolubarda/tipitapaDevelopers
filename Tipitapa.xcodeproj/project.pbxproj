@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB05A79027C8533300B1A0F1 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05A78F27C8533300B1A0F1 /* DogService.swift */; };
-		EB2A7FA927FCD0CC00175295 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A7FA827FCD0CC00175295 /* File.swift */; };
+		EB2A7FA927FCD0CC00175295 /* RestCountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A7FA827FCD0CC00175295 /* RestCountriesService.swift */; };
 		EB32073927BF071700136B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073827BF071700136B24 /* AppDelegate.swift */; };
 		EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073A27BF071700136B24 /* SceneDelegate.swift */; };
 		EB32073D27BF071700136B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32073C27BF071700136B24 /* ViewController.swift */; };
@@ -18,6 +18,7 @@
 		EB32075027BF071700136B24 /* TipitapaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32074F27BF071700136B24 /* TipitapaTests.swift */; };
 		EB32075A27BF071700136B24 /* TipitapaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32075927BF071700136B24 /* TipitapaUITests.swift */; };
 		EB32075C27BF071700136B24 /* TipitapaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32075B27BF071700136B24 /* TipitapaUITestsLaunchTests.swift */; };
+		EB33E1FA28088D9D00150FF4 /* StartingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB33E1F928088D9D00150FF4 /* StartingFile.swift */; };
 		EB7F98D727D3187B0076F3CE /* StructsAndClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F98D627D3187B0076F3CE /* StructsAndClasses.swift */; };
 		EBA7F0EE27CD94B60061F496 /* CarSellingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7F0ED27CD94B60061F496 /* CarSellingService.swift */; };
 		EBB9F42F27C07799005E8B4A /* Lessons01.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9F42E27C07799005E8B4A /* Lessons01.swift */; };
@@ -43,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		EB05A78F27C8533300B1A0F1 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
-		EB2A7FA827FCD0CC00175295 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		EB2A7FA827FCD0CC00175295 /* RestCountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestCountriesService.swift; sourceTree = "<group>"; };
 		EB32073527BF071700136B24 /* Tipitapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipitapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB32073827BF071700136B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB32073A27BF071700136B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		EB32075527BF071700136B24 /* TipitapaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipitapaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB32075927BF071700136B24 /* TipitapaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipitapaUITests.swift; sourceTree = "<group>"; };
 		EB32075B27BF071700136B24 /* TipitapaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipitapaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB33E1F928088D9D00150FF4 /* StartingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingFile.swift; sourceTree = "<group>"; };
 		EB7F98D627D3187B0076F3CE /* StructsAndClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructsAndClasses.swift; sourceTree = "<group>"; };
 		EBA7F0ED27CD94B60061F496 /* CarSellingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSellingService.swift; sourceTree = "<group>"; };
 		EBB9F42E27C07799005E8B4A /* Lessons01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons01.swift; sourceTree = "<group>"; };
@@ -91,7 +93,7 @@
 		EB2A7FA727FCD0B900175295 /* REST Countries */ = {
 			isa = PBXGroup;
 			children = (
-				EB2A7FA827FCD0CC00175295 /* File.swift */,
+				EB2A7FA827FCD0CC00175295 /* RestCountriesService.swift */,
 			);
 			path = "REST Countries";
 			sourceTree = "<group>";
@@ -119,9 +121,10 @@
 		EB32073727BF071700136B24 /* Tipitapa */ = {
 			isa = PBXGroup;
 			children = (
-				EB2A7FA727FCD0B900175295 /* REST Countries */,
+				EB32073C27BF071700136B24 /* ViewController.swift */,
 				EB32073827BF071700136B24 /* AppDelegate.swift */,
 				EB32073A27BF071700136B24 /* SceneDelegate.swift */,
+				EB2A7FA727FCD0B900175295 /* REST Countries */,
 				EBAE671727E2BC78008B7381 /* Old excercises */,
 				EB32073E27BF071700136B24 /* Main.storyboard */,
 				EB32074127BF071700136B24 /* Assets.xcassets */,
@@ -151,12 +154,12 @@
 		EBAE671727E2BC78008B7381 /* Old excercises */ = {
 			isa = PBXGroup;
 			children = (
-				EB32073C27BF071700136B24 /* ViewController.swift */,
 				EBB9F42E27C07799005E8B4A /* Lessons01.swift */,
 				EBB9F43027C077EF005E8B4A /* CountriesService.swift */,
 				EB05A78F27C8533300B1A0F1 /* DogService.swift */,
 				EBA7F0ED27CD94B60061F496 /* CarSellingService.swift */,
 				EB7F98D627D3187B0076F3CE /* StructsAndClasses.swift */,
+				EB33E1F928088D9D00150FF4 /* StartingFile.swift */,
 			);
 			path = "Old excercises";
 			sourceTree = "<group>";
@@ -299,8 +302,9 @@
 				EBB9F42F27C07799005E8B4A /* Lessons01.swift in Sources */,
 				EBA7F0EE27CD94B60061F496 /* CarSellingService.swift in Sources */,
 				EBB9F43127C077EF005E8B4A /* CountriesService.swift in Sources */,
-				EB2A7FA927FCD0CC00175295 /* File.swift in Sources */,
+				EB2A7FA927FCD0CC00175295 /* RestCountriesService.swift in Sources */,
 				EB32073B27BF071700136B24 /* SceneDelegate.swift in Sources */,
+				EB33E1FA28088D9D00150FF4 /* StartingFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
